@@ -11,7 +11,7 @@ export class AES_CBC extends AES {
    * @param {Uint8Array} [heap]
    * @param {Uint8Array} [asm]
    */
-  constructor(key, iv = null, padding = true, heap, asm) {
+  constructor(key, iv = undefined, padding = true, heap, asm) {
     super(key, iv, padding, heap, asm);
 
     this.mode = 'CBC';
